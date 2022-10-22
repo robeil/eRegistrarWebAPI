@@ -18,7 +18,6 @@ public class StudentController {
     @Autowired
     private StudentService studentService;
 
-   // @GetMapping("/list/{pageNo}")
     @GetMapping("/list")
     public ResponseEntity<List<StudentDTO>> getAllStudents() {
         return ResponseEntity.ok(studentService.getAllStudents());
